@@ -11,6 +11,7 @@ const CompThree = ({ PageProgress, Progress }) => {
   const progress4 = Progress[10];
   const progress5 = Progress[11];
   const progress6 = Progress[12];
+  const progress7 = Progress[13];
 
   useEffect(() => {
     if (PageProgress >= progress6) {
@@ -26,7 +27,7 @@ const CompThree = ({ PageProgress, Progress }) => {
     <div
       className="sponsor-compthree"
       style={{
-        transform: PageProgress >= progress4 && "translate(0,0)",
+        transform: PageProgress >= progress4 && PageProgress < progress7 ? "translate(0,0)" : PageProgress > progress6 && "translate(0,-120%)",
       }}
     >
       <div className="compthree-div">

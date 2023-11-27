@@ -9,8 +9,8 @@ export default function HomePage({ HandlePathname }) {
   const [pageProgress, setPageProgress] = useState(0);
 
   const progress = [
-    0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7,
-    0.75, 0.8, 0.85,0.9,0.95
+    0.04, 0.08, 0.12,0.16, 0.2, 0.24,0.28, 0.32, 0.36, 0.4, 0.44,0.48, 0.52, 0.56, 0.6, 0.64,0.68, 0.72,
+    0.76, 0.8, 0.84,0.88,0.92,0.96
   ];
 
   let progress1 = progress[5];
@@ -23,7 +23,7 @@ export default function HomePage({ HandlePathname }) {
   console.log(pageProgress);
   return (
     <div className="home-page-main-container">
-      <Stickyroll pages={1} factor={15} onProgress={(p) => setPageProgress(p)}>
+      <Stickyroll pages={1} factor={20} onProgress={(p) => setPageProgress(p)}>
         <p
           style={{
             position: "absolute",
