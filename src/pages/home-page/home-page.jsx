@@ -4,6 +4,8 @@ import { Stickyroll } from "@stickyroll/react";
 import Sponsor from "../../components/Sponsor/Sponsor";
 import Benefit from "../../components/Benifit/Benefit";
 import AiComp from "../../components/AiComp/AiComp";
+import OptimizeTime from "../../components/OptimizeTime/OptimizeTime";
+import Package from "../../components/PackagePage/Package";
 
 export default function HomePage({ HandlePathname }) {
   const [pageProgress, setPageProgress] = useState(0);
@@ -42,6 +44,8 @@ export default function HomePage({ HandlePathname }) {
           )}
 
           {/* <AiComp PageProgress={pageProgress} progress={progress} /> */}
+         { pageProgress >= progress[13] && <OptimizeTime PageProgress={pageProgress} Progress={progress}/> }
+         <Package PageProgress={pageProgress} Progress={progress} />
         </div>
       </Stickyroll>
     </div>
