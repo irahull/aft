@@ -1,0 +1,51 @@
+.circular-card {
+  position: absolute;
+  bottom: -10%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+  opacity: 0;
+
+  transition: 3s cubic-bezier(0.91, 0.02, 0, 0.97);
+  .card-div {
+    position: relative;
+    width: 14vw;
+    height: 8vw;
+    transform-style: preserve-3d;
+    animation: rotate 90s linear infinite;
+    .box {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transform-origin: center;
+      transform-style: preserve-3d;
+      transform: rotateY(calc(var(--i) * 25.65deg)) translateZ(34.5vw);
+      img {
+        position: absolute;
+
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 1vw;
+        object-fit: cover;
+        transition: 10s;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: perspective(95vw) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(95vw) rotateY(360deg);
+  }
+}

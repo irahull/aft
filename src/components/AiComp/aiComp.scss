@@ -1,0 +1,339 @@
+.aicomp-main {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  .aicomp-div {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 4;
+    color: white;
+    .ai-text {
+      width: 30%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: 1s ease-out;
+      opacity: 0;
+    }
+    // .small-green-shape {
+    //   position: absolute;
+    //   width: 100%;
+    //   height: 100%;
+    //   opacity: 0;
+    //   transition: 0.8s ease-out;
+    //   display: flex;
+    //   align-items: center;
+    //   justify-content: center;
+    //   img {
+    //     position: absolute;
+
+    //     width: 1vw;
+    //     transition: 1.2s ease-out;
+    //   }
+    //   .small-shape1 {
+    //     margin-top: -35vw;
+    //     // width: 1vw;
+    //     margin-left: -85vw;
+    //     // top: 10vw;
+    //     // left: 10vw;
+    //   }
+    //   .small-shape2 {
+    //     top: 20vw;
+    //     left: 15vw;
+    //   }
+    //   .small-shape3 {
+    //     top: 80vh;
+    //     left: 25vw;
+    //   }
+    // }
+    .ai-content-wrapper {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: 2s ease-in-out;
+      .ai-green {
+        width: 10%;
+        position: absolute;
+        top: 0%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: 2s ease-out;
+        z-index: 2;
+      }
+      .ai-green2 {
+        width: 10%;
+        position: absolute;
+        top: 50%;
+        left: -10%;
+        transform: translate(-50%, -42%) skewY(50deg) scale(0.3) rotate(45deg);
+        transition: 2.2s ease-in-out;
+        z-index: 2;
+      }
+      .connect-text {
+        width: 7%;
+        position: absolute;
+        top: 120%;
+        left: 50%;
+        z-index: 3;
+        transition: 2s ease-out;
+        transform: translate(-50%, -50%);
+        filter: drop-shadow(1vw 1vw 2vw #000000);
+      }
+      .ai-based {
+        position: absolute;
+        font-size: 2.2vw;
+        margin-top: 24vw;
+        margin-left: -14vw;
+        font-weight: 500;
+        opacity: 0;
+      }
+      .ai-text-wrapper {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        transition: 2s ease-out;
+        transform: translateY(50%);
+        .ai-htwo {
+          font-size: 2.2vw;
+          position: absolute;
+          margin-top: 24vw;
+          margin-left: 7vw;
+          font-weight: 500;
+        }
+        .line-bar {
+          width: 20%;
+          height: 0.2vh;
+          border-radius: 1vw;
+          position: absolute;
+          margin-top: 26.8vw;
+        }
+        .imagine-text,
+        .aftc-text,
+        .itconnect-text {
+          position: absolute;
+          width: 35%;
+          margin-top: 32vw;
+          transition: 1.2s ease-out;
+        }
+        .aftc-text {
+          opacity: 0;
+        }
+        .itconnect-text {
+          opacity: 0;
+          transition: 1.5s ease-out;
+          transform: translateY(500%);
+        }
+      }
+    }
+    .ai-frame-wrapper {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      .ai-phone-mockup {
+        .ai-phone {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: 18%;
+          transform: translate(-50%, -50%);
+          opacity: 0;
+          transition: 1s ease-in-out;
+        }
+        .schedule-text{
+            position: absolute;
+            margin-top: 14.9vw;
+            margin-left: 11vw;
+            width: 12%;
+            opacity: 0;
+            transition: 1s ease-in-out;
+        }
+        .line-bar2{
+            position: absolute;
+            margin-top: 18vw;
+            margin-left: 7vw;
+            width: 22%;
+            opacity: 0;
+            transition: 1s ease-out 0.5s; 
+        }
+      }
+      .frame-images {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        left: -28vw;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        z-index: 2;
+        transition: 1.5s ease-out;
+        transform: translateY(100%) skew(0deg, 25deg);
+        img {
+          width: 14%;
+          margin: 0.5vw 0vw;
+          transition: 1.5s ease-in-out;
+        }
+      }
+      .frame-img-extra {
+        position: absolute;
+        right: 15vw;
+        width: 12vw;
+        // transform: rotate(-20deg);
+        transition: 1.5s ease-out;
+        opacity: 0;
+        z-index: 2;
+        // transform: translatex(250%);
+      }
+      .ai-line-bars {
+        position: absolute;
+        width: 50vw;
+        height: 25vw;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: 1s ease-out;
+        img {
+          position: absolute;
+          z-index: 1;
+          opacity: 0.8;
+        }
+        .ai-line1 {
+          top: 0.5vw;
+          left: 4vw;
+          width: 90%;
+          height: 60%;
+        }
+        .ai-line2 {
+          top: 11vw;
+          width: 75%;
+          height: 25%;
+          left: 2vw;
+        }
+        .ai-line3 {
+          top: 14vw;
+          left: 1vw;
+          width: 75%;
+          height: 35%;
+        }
+      }
+      .match-data {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        transform: translate(-30%);
+        transition: 1.5s ease-out;
+
+        .md-top {
+          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          // position: absolute;
+          transition: 2s ease-in-out;
+          top: 16vh;
+          left: -39vw;
+          img {
+            width: 4%;
+            position: absolute;
+            z-index: 1;
+          }
+          p {
+            position: absolute;
+            z-index: 2;
+            font-size: 1.5vw;
+            text-align: center;
+          }
+          span {
+            z-index: 2;
+            font-size: 1.8vw;
+            transform: translateY(150%);
+          }
+        }
+        .md-center {
+          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          // position: absolute;
+          top: 36%;
+          left: -39vw;
+          img {
+            width: 4%;
+            position: absolute;
+            z-index: 1;
+          }
+          p {
+            position: absolute;
+            z-index: 2;
+            font-size: 1.5vw;
+            text-align: center;
+          }
+          span {
+            z-index: 2;
+            font-size: 1.8vw;
+            transform: translateY(150%);
+          }
+        }
+        .md-bottom {
+          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          // position: absolute;
+          top: 55%;
+          left: -39vw;
+          img {
+            width: 4%;
+            position: absolute;
+            z-index: 1;
+          }
+          p {
+            position: absolute;
+            z-index: 2;
+            font-size: 1.5vw;
+            text-align: center;
+          }
+          span {
+            z-index: 2;
+            font-size: 1.8vw;
+            transform: translateY(150%);
+          }
+        }
+      }
+      .last-green-shape {
+        .left-green-shape {
+          position: absolute;
+          width: 10%;
+          top: 43vh;
+          left: 33vw;
+          transform: translate(100%,300%) scale(0.5);
+          transition: 2s ease-out;
+        }
+        .right-green-shape {
+          position: absolute;
+          width: 10vw;
+          top: 44vh;
+          right: 34vw;
+          transition: 2s ease-out;
+          transform: translate(-100%,300%) scale(0.5);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,242 @@
+.compOne-main {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 1.5s ease-out;
+
+  /* ------------------------------- S1 first Section ------------------------ */
+  .compOne-s1-wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 3s cubic-bezier(0.91, 0.02, 0, 0.97);
+    .compOne-slide-one {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      transition: 1s ease-out;
+      .s1-lower-extra {
+        position: absolute;
+        bottom: -12vh;
+        left: 75%;
+        width: 30%;
+        transition: 1s ease-out;
+        z-index: 2;
+      }
+
+      .s1-first-section {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        transition: 1.5s ease-out;
+        img {
+          position: absolute;
+        }
+        .s1-upper {
+          top: -20%;
+          left: -10%;
+          width: 20%;
+        }
+        .main-logo {
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 25%;
+          z-index: 2;
+          transition: 1.2s ease-out;
+        }
+        .logo-below-image {
+          top: 51vh;
+          left: 56%;
+          width: 5%;
+          transition: 1.5s ease-out;
+        }
+        .s1-lower {
+          bottom: -12vh;
+          left: 75%;
+          width: 30%;
+          transition: 1.5s ease-out;
+          z-index: 1;
+        }
+      }
+      .s1-second-section {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        transition: 1.5s ease-out;
+        top: 60%;
+
+        .image-wrapper {
+          position: relative;
+          width: 100%;
+          height: 100%;
+          transition: 1.5s ease-out;
+          img {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            position: absolute;
+            width: 50%;
+            transition: 1s ease-out;
+          }
+         
+        }
+        .cross-image {
+          position: absolute;
+          width: 15%;
+          bottom: -10%;
+          left: -2%;
+          transition: 1s ease-out;
+        }
+        .mockup-wrapper {
+          position: absolute;
+          bottom: -100%;
+          right: 0%;
+          width: 182vh;
+          transition: 1.5s ease-out;
+          .phone-mockup {
+            position: absolute;
+            width: 100%;
+            z-index: 3;
+            bottom: 0;
+            right: 0%;
+          }
+          .left-leaf {
+            position: absolute;
+            z-index: 1;
+            width: 20%;
+            bottom: 7vh;
+            right: 20%;
+            transition: 1s ease-out;
+          }
+          .right-leaf {
+            position: absolute;
+            z-index: 1;
+            width: 20%;
+            bottom: 9vh;
+            right: 20%;
+            transition: 1s ease-out;
+          }
+          // .s1-rect {
+          //   position: absolute;
+          //   z-index: 3;
+          //   width: 25%;
+          //   bottom: -15vh;
+          //   right: 2%;
+          // }
+        }
+          .s1-rect {
+          position: absolute;
+          z-index: 3;
+          width: 22vw;
+          bottom: -8vw;
+          right: 3vw;
+          transition: 0.2s ease-in-out 1.5s;
+        }
+      }
+    }
+  }
+
+   /* ------------------------------- S2 first Section ------------------------ */
+  .compOne-s2-wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 1.5s ease-out;
+
+    .s2-first-section {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        position: absolute;
+      }
+      .s2-rect {
+        z-index: 3;
+        width: 20%;
+        top: -15%;
+        left: -20%;
+        opacity: 0;
+        transition: 3s cubic-bezier(0.91, 0.02, 0, 0.97);
+      }
+      .s2-img-wrapper {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 3s cubic-bezier(0.91, 0.02, 0, 0.97);
+        .s2-center-text {
+          width: 40%;
+          top: 50%;
+          left: 150%;
+          transform: translate(-50%, -50%);
+          transition: 3s cubic-bezier(0.91, 0.02, 0, 0.97);
+        }
+        .s2-icecream {
+          width: 12%;
+          margin-top: -1vw;
+          margin-left: -150vw;
+          transition: 3s cubic-bezier(0.91, 0.02, 0, 0.97);
+          z-index: 5;
+        }
+      }
+      .s2-left-veg {
+        bottom: -20vh;
+        left: 0%;
+        width: 10%;
+        transition: 3s cubic-bezier(0.91, 0.02, 0, 0.97);
+      }
+      .s2-right-veg {
+        bottom: -40vh;
+        right: -5%;
+        width: 20%;
+        transition: 3s cubic-bezier(0.91, 0.02, 0, 0.97);
+      }
+      .s2-sponsor-mock {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        bottom: -80%;
+        transition: 3s cubic-bezier(0.91, 0.02, 0, 0.97);
+        img {
+          position: absolute;
+          bottom: 0;
+        }
+        .s2-mockupp {
+          left: 50%;
+          transform: translateX(-50%);
+          width: 96vh;
+        }
+      }
+      .s2-left {
+        position: absolute;
+        bottom: 0;
+        left: -15%;
+        width: 15%;
+        transition: 3s cubic-bezier(0.91, 0.02, 0, 0.97);
+      }
+      .s2-right {
+        position: absolute;
+        bottom: 0;
+        right: -15%;
+        width: 15%;
+        transition: 3s cubic-bezier(0.91, 0.02, 0, 0.97);
+      }
+    }
+  }
+}

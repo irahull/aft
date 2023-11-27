@@ -1,0 +1,47 @@
+.benefit-card {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.432);
+  color: white;
+  border-radius: 2vw;
+  .card-section {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1vw 4vw;
+   
+    .card-title {
+      font-size: 1.4vw;
+      margin: 1vw 0vw;
+      display: flex;
+      font-weight: 500;
+      justify-content: center;
+      gap: 0.5vw;
+      text-shadow: 0.5vw 0.5vw 0.3vw rgba(0,0,0,0.6);
+      .title-bullet {
+        font-size: 2vw;
+        line-height: 2vw;
+      }
+    }
+    .card-para {
+      p {
+        margin: 1vw 0vw;
+        font-size: 1.1vw;
+        display: flex;
+        font-weight: 400;
+        line-height: 1.6vw;
+        text-shadow: 0.5vw 0.5vw 0.3vw rgba(0,0,0,0.6);
+
+        justify-content: center;
+        gap: 0.5vw;
+        .para-bullet {
+          font-size: 2vw;
+          line-height: 1.6vw;
+        }
+      }
+    }
+  }
+}

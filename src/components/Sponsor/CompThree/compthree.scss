@@ -1,0 +1,64 @@
+.sponsor-compthree{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform: translate(-110%, 25%);
+    transition: 3s cubic-bezier(0.91,0.02,0,0.97);  
+    .compthree-div{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        .compthree-s1{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .compthree-image-wrapper{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                transition: 3s cubic-bezier(0.91,0.02,0,0.97);  
+                z-index: 2;
+                img{
+                    position: absolute;
+                }
+                .cross-upper{
+                    top: -5%;
+                    left: -2%;
+                    width: 10%;
+                }
+                .compthree-text{
+                    top: 50vh;
+                    left: 50%;
+                    transform: translate(-50%, -10vh);
+                    width: 40%;
+                    transition: 3s cubic-bezier(0.91,0.02,0,0.97);  
+              
+                }
+                .cross-lower{
+                    bottom: -16%;
+                    right: -8%;
+                    width: 25%;
+                    transition: 3s cubic-bezier(0.91,0.02,0,0.97);  
+                }
+            }
+            .shankinghand-bg{
+                position: absolute;
+                width: 40vw;
+                transition: 3s cubic-bezier(0.91,0.02,0,0.97);  
+                background-color: rgb(0, 0, 0);
+                .c3-shakinghand{
+                    z-index: 1;
+                    opacity: 0;
+                    transition: 3s cubic-bezier(0.91,0.02,0,0.97);  
+                    width: 40vw;
+                    color: white;
+                    mix-blend-mode: hard-light;
+                 
+                }
+            }
+            
+        }
+    }
+}

@@ -1,0 +1,90 @@
+.gridbox-main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(0, 0, 0);
+  .gridbox-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    .gridbox1,
+    .gridbox2,
+    .gridbox3,
+    .gridbox4 {
+      position: absolute;
+      width: 40%;
+      height: 45vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      .content-img {
+        width: 30vw;
+      }
+      .light-green,
+      .light-black,
+      .light-black2,
+      .light-blue {
+        position: absolute;
+        width: 120%;
+        height: 100%;
+        opacity: 0.2;
+      }
+    }
+    .gridbox1 {
+      top: 2.5vw;
+      left: 10vw;
+
+      .light-green {
+        z-index: 2;
+        left: -3vw;
+        top: -4vw;
+      }
+      &:hover .light-green {
+        opacity: 1;
+      }
+    }
+
+    .gridbox2 {
+      top: 2.5vw;
+      right: 10vw;
+
+      .light-blue {
+        right: -5vw;
+        top: -4vw;
+        z-index: 2;
+      }
+      &:hover .light-blue {
+        opacity: 1;
+      }
+    }
+    .gridbox3 {
+      bottom: 2.5vw;
+      left: 10vw;
+      .light-black {
+        bottom: -2.5vw;
+        left: -4.5vw;
+        z-index: 2;
+      }
+      &:hover .light-black {
+        opacity: 1;
+      }
+    }
+    .gridbox4 {
+      bottom: 2.5vw;
+      right: 10vw;
+
+      .light-black2 {
+        bottom: -2.5vw;
+        right: -4vw;
+        z-index: 2;
+      }
+      &:hover .light-black2 {
+        opacity: 1;
+      }
+    }
+  }
+}

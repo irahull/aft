@@ -1,0 +1,250 @@
+.benefits-main {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 1.5s ease-in-out;
+  z-index: 1;
+  .benefits-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    .benefits-s1 {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      h2 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 600%);
+        font-size: 4vw;
+        font-weight: 900;
+        background-image: url("../../assets//agri-tech/text-bg-clip.png");
+        background-size: 10%;
+        background-position: center;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        transition: 2s ease-in-out;
+        z-index: 3;
+        letter-spacing: -2px;
+        // animation: BgPositionAnim  4s ease-in-out;
+
+      }
+      .s1-mockup {
+        top: 35%;
+        left: 38%;
+        width: 180vw;
+        height: 150vw;
+        transform: translate(-50%, -50%) rotate(-5deg);
+        position: absolute;
+        transition: 2s ease-in-out;
+        z-index: 1;
+      }
+      .s1-overlay1 {
+        position: absolute;
+        z-index: 2;
+        top: -20%;
+        right: -20%;
+        width: 150%;
+        height: 200%;
+        transform-origin: right;
+        transform: rotate(25deg);
+        transition: 3.5s ease-in-out;
+        background-color: black;
+      }
+      .s1-overlay2 {
+        position: absolute;
+        z-index: 3;
+        top: -25%;
+        left: -25%;
+        width: 0%;
+        height: 250%;
+        transform-origin: right;
+        transform: rotate(25deg);
+        transition: 2.5s ease-in-out;
+        background-color: black;
+      }
+    }
+
+    // -------------- Slide Two ----------------
+
+    .benefits-s2 {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      z-index: 5;
+      .s2-heading-wrapper {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: 40vh;
+        transition: 1s ease-in-out;
+        .h-two {
+          transform: translate(20%, 250%);
+          font-size: 4vw;
+          font-weight: 900;
+          background-image: url("../../assets//agri-tech/text-bg-clip.png");
+          background-size: 0;
+          transform-origin: right;
+          background-position: center;
+          background-clip: text;
+          -webkit-background-clip: text;
+          color: transparent;
+          transition: 1.5s ease-in-out ;
+          animation: BgPositionAnim2  4s ease-in-out;
+          z-index: 4;
+          opacity: 0;
+        }
+        .for-text {
+          transform: translate(-10%, 2000%) scale(4);
+          font-size: 5vw;
+          font-weight: 600;
+          line-height: 4vw;
+          z-index: 4;
+          transition: 2s ease-in-out;
+          background: linear-gradient(
+            180deg,
+            #747474 0%,
+            rgba(38, 38, 38, 0) 115.29%
+          );
+          background-clip: text;
+          -webkit-background-clip: text;
+          color: transparent;
+        }
+      }
+      .s2-image-wrapper {
+        .s2-audeience-left {
+          position: absolute;
+          bottom: 5.8vw;
+          left: 0%;
+          width: 50vw;
+          transition: 2.5s ease-in-out;
+          transform: translate(-120%, 120%) scale(2);
+        
+        }
+        .s2-audeience-right {
+          position: absolute;
+          bottom: 6vw;
+          right: 0%;
+          width: 50.2vw;
+          transition: 2.5s ease-in-out;
+          transform: translate(-25%, 120%) scale(3);
+        }
+        .s2-overlay {
+          position: absolute;
+          bottom: -100vw;
+          left: 60%;
+          width: 8vw;
+          transform: translateX(-50%);
+          height: 8vw;
+          transition: 2.5s ease-in-out;
+          img {
+            width: 200%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+        }
+      }
+      .s2-card-wrapper {
+        .cardOne {
+          position: absolute;
+          width: 43.5vw;
+          height: 27vw;
+          z-index: 4;
+          right: -0.2%;
+          bottom: 5.8vw;
+          transform: translateX(100%);
+          transition: 1s ease-in-out;
+        }
+        .cardTwo {
+          position: absolute;
+          width: 43.5vw;
+          height: 27.5vw;
+          z-index: 4;
+          left: -0.2%;
+          bottom: 6vw;
+          transform: translateX(-100%);
+          transition: 1s ease-in-out;
+        }
+      }
+    
+      .s2-bottom-text-wrapper{
+        .s2-bt1{
+          position: absolute;
+          left: 10%;
+          bottom: 4vh;
+          z-index: 4;
+          color: white;
+          font-weight: 500;
+          font-size: 1.7vw;
+          transition: 1.2s ease-in-out;
+          word-spacing: 0.5vw;
+          transform: translateY(400%);
+          span{
+            color: #0DF40F;
+
+          }
+        }
+        .s2-shadow-div{
+          position: absolute;
+          bottom: 3.5vh;
+          left: 21.5vw;
+          width: 8.6vw;
+          height: 2.5vw;
+          background: linear-gradient(-45deg, #0DF40F , #00000000 );
+          transition: 1.5s ease-in-out;
+          z-index: 3;
+          border-radius: 999;
+          border-radius: 2vw;
+          transform: translate(0%,600%);
+          .shadow-inner{
+            position: absolute;
+            top: 1%;
+            right: 1%;
+            width: 99%;
+            height: 99%;
+            background:#2b2b2b;
+            border-radius: 2vw;
+          }
+        }
+        .s2-bt2{
+          position: absolute;
+          right: 10%;
+          bottom: 4vh;
+          z-index: 4;
+          color: white;
+          font-weight: 500;
+          font-size: 1.7vw;
+          transition: 1.2s ease-in-out;
+          transform: translateY(400%);
+          word-spacing: 0.5vw;
+
+          span{
+            color: #0DF40F;
+
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+@keyframes BgPositionAnim {
+  0%{
+    background-position-x: 150;
+  }
+  100%{
+    background-position-x:0;
+  }
+}
